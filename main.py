@@ -4,6 +4,18 @@ from colorama import Fore, Style, init
 init()
 
 SERVICES = {
+    "RDP":{
+        20: "TCP FTP",
+        21: "TCP FTP",
+        3389: "TCP RDP",
+        3306: "TCP MySQL",
+    },
+    "SSH":{
+        20: "TCP FTP",
+        21: "TCP FTP",
+        21: "TCP SSH",
+        3306: "TCP MySQL",
+    },
     "cPanel": {
         20: "TCP FTP",
         21: "TCP FTP",
@@ -29,6 +41,9 @@ SERVICES = {
         40125: "TCP TxAdmin",
     },
     "Minecraft": {
+        22: "TCP SSH",
+        3389: "TCP RDP",
+        3306: "TCP MySQL",
         25565: "Minecraft Server",
     },
     "TeamSpeak3": {
